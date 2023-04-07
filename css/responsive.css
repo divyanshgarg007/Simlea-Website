@@ -1,0 +1,348 @@
+@media (max-width: 767px){
+    .pd-left{
+        padding-left: 15px!important;
+     }
+     .content_blog {
+        padding-right: 15px!important;
+    }
+    .mobile-grid{
+        row-gap: 1.5rem;
+    }
+    .common-space {
+        padding: 60px 0 60px!important;
+    }
+    .header .site_logo {
+        width: auto;
+        float: left;
+    }
+    .header .site_logo img {
+        width: 130px;
+    }
+    .top_right_section {
+        margin-right: 0;
+        max-width: 54%;
+        position: relative;
+        z-index: 9999;
+        float: right;
+        padding-right: 0;
+    }
+   
+    /* Faqs CSS */
+    button.btn.btn-link h6{
+        font-size: 16px;
+        line-height: 25px;
+        white-space: normal;
+        text-align: left;
+        margin-right: 30px;
+    }
+    .faq_heading h3{
+        font-size: 30px;
+    line-height: 46px;
+    }
+    .accordion{
+        margin-top: 2rem;
+    }
+
+    /* Blogs CSS */
+    .blog_heading h3{
+        font-size: 30px;
+    line-height: 46px;
+    }
+.blogs_all a{
+    font-size: 16px;
+}
+.blog_heading p{
+    font-size: 16px;
+    line-height: 23px;
+}
+.categories_btn_group a{
+    margin-right: 0;
+}
+.blog-content h4{
+    line-height: 26px;
+}
+.mobile-row-space{
+    margin-bottom: 1rem;
+}
+.row-space{
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+ /* LiveDemo CSS */
+ .liveDemo{
+     padding: 60px 0 0 0;
+ }
+ .livedemo_heading h3{
+    font-size: 30px;
+    line-height: 46px;
+ }
+ .livedemo_heading p{
+    font-size: 16px;
+    line-height: 21px;
+    width: 100%;
+ }
+ .livedemo_heading .live_btn a{
+    font-size: 16px;
+    line-height: 21px;
+ }
+
+  /* Contact Us CSS */
+  .contact{
+      padding: 60px 0 60px 0;
+  }
+  .contact-left-sidebar .contact_heading h3{
+    font-size: 30px;
+    line-height: 46px;
+  }
+  .contact-left-sidebar .contact_heading p{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contact-left-sidebar .contact_details h3{
+    font-size: 30px;
+    line-height: 46px;
+  }
+  .contact-left-sidebar .contact_details p{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contact_details_content .contact-box p{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contact-form{
+      margin-top: 2rem;
+  }
+  .contact-submit{
+      width: 100%;
+      margin-top: 1rem;
+      padding: 15px 0;
+  }
+
+   /* Testimonials CSS */
+   .testimonial_slider .item{
+    padding: 1.5rem 2rem 0rem 2rem;
+}
+.item p.para{
+    font-size: 20px;
+    line-height: 28px;
+}
+.testimonial_slider .item h4{
+    font-size: 20px;
+    line-height: 24px;
+}
+.side-right img{
+    width: 45%;
+    float: right;
+}
+.side-left img{
+    width: 45%;
+}
+.testimonial_slider .owl-dots {
+    margin-top: 1rem;
+}
+
+ /* Process CSS */
+ .process .section_heading h3{
+    font-size: 30px;
+    line-height: 46px;
+ }
+ .button-blue a{
+    font-size: 16px;
+    line-height: 21px;
+ }
+ .button-blue {
+    padding: 15px;
+    margin: 2rem auto 1rem;
+}
+.process-box h5{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Header CSS */
+.hide-xs{
+    display: none;
+}
+.visible-xs{
+    display: flex;
+}
+.top_right_section .hamburger-wrapper{
+    float: right;
+}
+.top_right_section{
+    padding: 0px 15px;
+}
+.header .site_logo img {
+    width: 150px;
+}
+
+/* Footer CSS */
+footer .footer-top{
+    padding: 50px 0;
+}
+.fullwidth img{
+    width: 100%;
+}
+.bottom-menu{
+    column-gap: 25px;
+    padding: 0;
+}
+.footer-menu-dropdown .dropdown-menu {
+    left: -60px!important;
+}
+.download_app p{
+    right: 0;
+    bottom: -55px;
+    font-size: 13px;
+}
+
+/* Banner CSS */
+.text h1{
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 1rem;
+}
+.text p{
+    font-size: 16px;
+    line-height: 21px;
+}
+.banner-button a{
+    font-size: 16px;
+    line-height: 21px;
+}
+.banner-button {
+    margin-top: 2.5rem;
+}
+.content-box{
+    padding: 0px 15px;
+}
+.bg-left-white{
+    padding: 6rem 0 4rem 0;
+}
+.banner-right-image {
+    position: relative;
+}
+.left-bg.bg-left-black {
+    width: auto;
+}
+.right-bg.bg-right-black{
+    width: 100%;
+}
+
+/* Features CSS */
+.features{
+    background-image: none;
+}
+.features_image{
+    margin-top: 2rem;
+}
+.features_image img{
+    width: 100%;
+}
+.custom-pd{
+    padding: 0 0 0 15px;
+}
+
+/* Product banner Css */
+.banner-row{
+    padding: 6rem 0 6rem 0;
+    background-image: url(../img/product-banner.svg);
+    background-position: 0% 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.product-banner-heading .banner-box h3{
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 1rem;
+}
+.product-banner-heading .banner-box p{
+    font-size: 16px;
+    line-height: 21px;
+}
+.fullBanner {
+    padding: 0rem 1rem;
+}
+.tab1 img {
+    width: 85%;
+}
+.tab2 {
+    position: absolute;
+    top: 18%;
+    right: -5px;
+    width: 28%;
+}
+.tab2 img {
+    width: 100%;
+}
+.step-left img{
+    width: 45%;
+    float: right;   
+}
+
+/* Product stepper Css */
+.stepper_heading h3{
+    font-size: 30px;
+    line-height: 46px;
+}
+.stepper_heading p{
+    font-size: 16px;
+    line-height: 21px;
+}
+.stepper_img img{
+    width: 100%;
+}
+
+/* Product features Css */
+
+.features_heading h3{
+    font-size: 30px;
+    line-height: 46px;
+}
+.features_heading p{
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/* Function Page Css */
+.function-banner-row{
+    padding: 6rem 0 2rem;
+}
+.function_info{
+    padding: 60px 0px;
+}
+.info_card{ 
+    min-height: auto;
+}
+.blog_detail_btn{
+    width: 50%!important;
+}
+}
+
+/* For Tablets */
+
+@media(min-width:768px) and (max-width:1023px){
+    .contact-submit{
+        width: 100%;
+        padding: 15px;
+    }
+    .download_app p{
+        right:19%;
+    }
+    .side-left img{
+        width: 50%;
+    }
+    .side-right img{
+        width: 50%;
+        float: right;
+    }
+    .testimonial_slider .item {
+        padding: 0px 5rem;
+    }
+    .text h1{
+        font-size: 55px;
+        line-height: 65px;    
+    }
+}

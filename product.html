@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' rel='stylesheet'>
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <!-- <link rel="stylesheet" href="css/theme.css" type="text/css" />
+         <link rel="stylesheet" href="css/media.css" type="text/css" /> -->
+      <title>SIMLEA</title>
+    <style>
+       .stepper .nav-tabs {
+	 position: relative;
+    border-bottom: none;
+}
+ .stepper .nav-tabs > li {
+	 width: 100%;
+	 position: relative;
+    display: flex;
+    transition: 1s;
+}
+ .stepper .nav-tabs > li:last-child::after {
+	 background: transparent;
+}
+
+ .stepper .nav-tabs [data-toggle='tab'] {
+	 width: 25px;
+	 height: 25px;
+	 margin: 20px auto;
+	 border-radius: 100%;
+	 border: none;
+	 padding: 0;
+	 color: #f1f1f1;
+}
+
+ .stepper .tab-pane {
+	 position: relative;
+}
+ .stepper .round-tab {
+	 width: 15px;
+	 height: 15px;
+	 border-radius: 25px; 
+    z-index: 2;
+    background: #6e6e6e;
+	 position: absolute;
+	 left: 0;
+    left: -61.5px;
+    top: -1px;
+}
+
+.panel-default{
+   margin-top: 80px;
+}
+.steps_header h3{
+   font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+color: #FAFAFA;
+}
+.steps_header p{
+   font-family: 'DM Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+color: #676767;
+}
+.steps_header a{
+   font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 29px;
+color: #30C6EA;
+}
+.steps_header a img{
+padding-left: 10px;
+}
+.steps_header a:hover{
+text-decoration: none;
+}
+.step_content_box{
+   margin-left: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2B2B2B;
+    margin-bottom: 40px;
+}
+
+.disable_header h3{
+   color: #2D2D2D;
+opacity: 0.5;
+}
+.disable_header p{
+   color: #2D2D2D;
+opacity: 0.5;
+}
+.stepper{
+   display: flex;
+    column-gap: 60px;
+}
+.fixed-line{
+   position: relative;
+background: #6e6e6e;
+display: block;
+width: 2px;
+height: 100%;
+
+left: 7px;
+z-index: 0;
+transition: 1s;
+}
+.colored-line{
+   position: absolute;
+background: #30c6ea;
+display: block;
+width: 2px;
+height: 0;
+top: 0;
+left: 0;
+z-index: 0;
+transition: 1s;
+}
+.active_round{
+   background: #30c6ea!important;  
+}
+.active-step .round-tab{
+   background: #30c6ea!important;  
+}
+.active-step .disable_header h3{
+   color: #FAFAFA;
+   opacity: 1;
+}
+.active-step .disable_header p{
+   color: #676767;
+   opacity: 1;
+}
+.sidebar_image .vs-pan{
+   position: sticky;
+   top: 0;
+}
+.vs-interseptor{
+   padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    z-index: 99999;
+}
+.vs-item:last-child .step_content_box{
+   border-bottom: none;
+   margin-bottom: 0;
+}
+
+.stepper_img img{
+   height: 400px;
+   width: 400px;
+   object-fit: contain;
+}
+
+.mobile-stepper{
+   border: 2px solid #E7E5EA;
+   margin: 40px 15px;
+    padding: 15px 0;
+}
+.mobile_stepper_img img{
+   width: 100%;
+}
+.visible-mobile{
+   display: block;
+}
+.steps_header{
+   margin: 25px 5px;
+}
+    </style>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="row align-items-center hide-xs">
+               <div class="top_right_section col-md-3">
+                  <div class="container-hamburger">
+                     <div class="hamburger-wrapper">
+                        <div class="hamburger product-hamburger">
+                           <span class="hamurger-first"></span>
+                           <span class="hamurger-second"></span>
+                           <span class="hamurger-third"></span>
+                        </div>
+                        <div class="hamburger-menu">
+                           <ul class="hamburger-nav">
+                              <div class="slideLogo"><img src="https://mindstask.com/side-menu-logo/logo_white.png" alt="" width="175" /></div>
+                              <div class="onlySmalldesvice">
+                                 <div class="">
+                                    <div class="tabs">
+                                    </div>
+                                 </div>
+                              </div>
+                        </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="site_logo col-md-9">
+                  <a href="/"><img src="img/logo-header.svg" alt=""></a>
+               </div>
+            </div>
+
+            <div class="row align-items-center visible-xs hide-md">
+               <div class="site_logo col-md-9">
+                  <a href="/"><img src="img/logo-header.svg" alt=""></a>
+               </div>
+               <div class="top_right_section col-md-3">
+                  <div class="container-hamburger">
+                     <div class="hamburger-wrapper">
+                        <div class="hamburger product-hamburger">
+                           <span class="hamurger-first"></span>
+                           <span class="hamurger-second"></span>
+                           <span class="hamurger-third"></span>
+                        </div>
+                        <div class="hamburger-menu">
+                           <ul class="hamburger-nav">
+                              <div class="slideLogo"><img src="https://mindstask.com/side-menu-logo/logo_white.png" alt="" width="175" /></div>
+                              <div class="onlySmalldesvice">
+                                 <div class="">
+                                    <div class="tabs">
+                                    </div>
+                                 </div>
+                              </div>
+                        </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+         <!-- \\  Begin mobilemenu \\  -->
+         <div class="mobilemenu">
+            <div id="mainmenu" class="default11"></div>
+         </div>
+         <!-- // End mobilemenu  //  -->
+         </div>
+      </header>
+      <div class="product_banner">
+         <div class="container">
+            <div class="row banner-row">
+               <div class="fullBanner">
+                  <div class="product-banner-heading">
+                     <div class="banner-box">
+                        <h3>Erfassen Sie in Sekunden Ihre Leads – smart und verlässlich.</h3>
+                        <p>Erfahren Sie hier, welche Vorteile eine intuitive Lösung im Messealltag bietet.</p>
+                     </div>
+                     <div class="banner-button text-center">
+                        <a class="" href="#">SIMLEA gratis testen<img src="img/Arrow-Right.png"></a>
+                     </div>
+                     <div class="bottom-banner-img">
+                     <div class="tab1">
+                     <img src="img/tab1.png">
+                     </div>
+                     <div class="tab2">
+                        <img src="img/tab2.png">
+                        </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="stepper-demo common-space">
+         <div class="step-left"> <img src="img/step-right.png"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-11">
+                  <div class="stepper_heading">
+                     <h3>Digitale Leaderfassung leicht und schnell gemacht.
+                  </h3>
+                  <p>Behalten Sie jederzeit die Kontrolle im digitalen Lead-Management-Prozess.</p>
+               </div>
+               <div class="panel panel-default hide-xs">
+                  <div class="panel-body">
+                    <div class="stepper" id="navbar-example3">
+                       <div class="vs-interseptor"></div>
+                       <div class="vs-progress">
+                        <div class="fixed-line"> <div class="colored-line"></div></div>
+                        <!-- <span class="round-tab"></span> -->
+                       </div>
+                      <ul class="nav nav-tabs virtual-scroller" role="tablist">
+                        <li role="presentation" class="vs-item vs-one disabled">
+                          <!-- <div class="vs-progress">
+                           <span class="round-tab active_round"></span>
+                           <div class="fixed-line"> <div class="colored-line"></div></div>
+                           <span class="round-tab"></span>
+                          </div> -->
+                          <span class="round-tab active_round"></span>
+                          <div class="step_content_box">
+                           <div class="steps_header">
+                              <h3>Visitenkarten in Sekunden richtig erfassen</h3>
+                              <p>Fotografieren Sie mit der Kamera des mobilen Endgeräts (Smartphone/Tablet) Visitenkarten.  SIMLEA erkennt mittels OCR oder QR-Code Texte in 27
+                                  Landessprachen und ordnet Informationen in die korrekten Felder ein. SIMLEA lernt ständig dazu und erreicht dadurch eine automatisierte 
+                                  Übertragungsqualität von 99 %.</p>
+                                  <a href="">Live Demo verabreden <img src="img/Arrow-blue.png"></a>
+                           </div>
+                          </div>
+                        </li>
+                        <li role="presentation" class="vs-item vs-two disabled">
+                           <span class="round-tab "></span>
+                          <!-- <div class="vs-progress">
+                           
+                           <div class="fixed-line"> <div class="colored-line"></div></div>
+                           <span class="round-tab"></span>
+                          </div> -->
+                          <div class="step_content_box">
+                           <div class="steps_header disable_header">
+                              <h3>Visitenkarten in Sekunden richtig erfassen</h3>
+                              <p>Fotografieren Sie mit der Kamera des mobilen Endgeräts (Smartphone/Tablet) Visitenkarten.  SIMLEA erkennt mittels OCR oder QR-Code Texte in 27
+                                  Landessprachen und ordnet Informationen in die korrekten Felder ein. SIMLEA lernt ständig dazu und erreicht dadurch eine automatisierte 
+                                  Übertragungsqualität von 99 %.</p>
+                                  <a href=""></a>
+                           </div>
+                          </div>
+                        </li>
+                        <li role="presentation" class="vs-item vs-three disabled">
+                           <span class="round-tab"></span>
+                          <!-- <div class="vs-progress">
+                           <div class="fixed-line"> <div class="colored-line"></div></div>
+                           <span class="round-tab"></span>
+                          
+                          </div> -->
+                          <div class="step_content_box">
+                           <div class="steps_header disable_header">
+                              <h3>Visitenkarten in Sekunden richtig erfassen</h3>
+                              <p>Fotografieren Sie mit der Kamera des mobilen Endgeräts (Smartphone/Tablet) Visitenkarten.  SIMLEA erkennt mittels OCR oder QR-Code Texte in 27
+                                  Landessprachen und ordnet Informationen in die korrekten Felder ein. SIMLEA lernt ständig dazu und erreicht dadurch eine automatisierte 
+                                  Übertragungsqualität von 99 %.</p>
+                                  <a href=""></a>
+                           </div>
+                          </div>
+                        </li>
+                        <li role="presentation" class="vs-item vs-two disabled">
+                           <span class="round-tab "></span>
+                          <!-- <div class="vs-progress">
+                           
+                           <div class="fixed-line"> <div class="colored-line"></div></div>
+                           <span class="round-tab"></span>
+                          </div> -->
+                          <div class="step_content_box">
+                           <div class="steps_header disable_header">
+                              <h3>Visitenkarten in Sekunden richtig erfassen</h3>
+                              <p>Fotografieren Sie mit der Kamera des mobilen Endgeräts (Smartphone/Tablet) Visitenkarten.  SIMLEA erkennt mittels OCR oder QR-Code Texte in 27
+                                  Landessprachen und ordnet Informationen in die korrekten Felder ein. SIMLEA lernt ständig dazu und erreicht dadurch eine automatisierte 
+                                  Übertragungsqualität von 99 %.</p>
+                                  <a href=""></a>
+                           </div>
+                          </div>
+                        </li>
+                      </ul>
+                        <div class="tab-content sidebar_image" >
+                          <div class="tab-pane fade show vs-pan active" role="tabpanel" id="image-right">
+                           <div class="stepper_img">
+                              <img src="img/tab3.png">
+                          </div>
+                          </div>
+                          <div class="tab-pane fade vs-pan" role="tabpanel" id="stepper-step-2">
+                           <div class="stepper_img">
+                              <img src="img/latest-blog-3.jpg">
+                          </div>
+                          </div>
+                          <div class="tab-pane fade vs-pan" role="tabpanel" id="stepper-step-3">
+                           <div class="stepper_img">
+                              <img src="img/about19.jpg">
+                          </div>
+                          </div>
+                          <div class="tab-pane fade vs-pan" role="tabpanel" id="stepper-step-2">
+                           <div class="stepper_img">
+                              <img src="img/latest-blog-3.jpg">
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+              
+                  </div>
+                </div>
+               
+               </div>
+               <div class="mobile-stepper hide-md visible-mobile">
+                  <div class="col-md-6">
+                     <div class="mobile_stepper_img">
+                        <img src="img/tab3.png">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="steps_header">
+                        <h3>Visitenkarten in Sekunden richtig erfassen</h3>
+                        <p>Fotografieren Sie mit der Kamera des mobilen Endgeräts (Smartphone/Tablet) Visitenkarten.  SIMLEA erkennt mittels OCR oder QR-Code Texte in 27
+                            Landessprachen und ordnet Informationen in die korrekten Felder ein. SIMLEA lernt ständig dazu und erreicht dadurch eine automatisierte 
+                            Übertragungsqualität von 99 %.</p>
+                            <a href="">Live Demo verabreden <img src="img/Arrow-blue.png"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="features common-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="features_heading">
+                     <h3>Verwalten Sie intuitiv mit wenig Klicks SIMLEA
+                  </h3>
+                  <p>Behalten Sie jederzeit die Kontrolle im digitalen Lead-Management-Prozess.</p>
+               
+               </div>
+               <div class="features_warpper">
+               <div class="features_card active_card">
+                  <div class="features_box active_box">
+                     <div class="features_details">
+                        <img src="img/smart.png">
+                        <h5>Smart administrieren</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="features_card">
+                  <div class="features_box">
+                     <div class="features_details">
+                        <img src="img/share.png">
+                        <h5>Effiziente Konnektivität</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="features_card">
+                  <div class="features_box">
+                     <div class="features_details">
+                        <img src="img/Service.png">
+                        <h5>Service versprochen</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="features-bottom">
+                  <h5>SIMLEA bietet Ihnen alle Arten der Datenverarbeitung. Versenden Sie innerhalb SIMLEA Messeberichte an Ihre Leads per E-Mail. Geben Sie Ihrem Backoffice Zugang zu SIMLEA, um Leads weiterzuverarbeiten oder binden Ihre IT-Systeme (CRM, ERP oder Marketing Automation) für die effektive Weiterverarbeitung an.  Zusätzlich steht Ihnen Datenexport per Excel, CSV oder XML zur Verfügung.</h5>
+               </div>
+               </div>
+               </div>
+               <div class="col-md-6 custom-pd">
+                  <div class="features_image hide-md visible-xs">
+                     <img src="img/Macbook-pro.png">
+                 </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="testimonials-dark common-space">
+          <div class="side-left"> <img src="img/side1.png"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="testimonial_slider owl-dark owl-carousel owl owl-theme">
+                     <div class="item textWhite">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                     <div class="item textWhite">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                     <div class="item textWhite">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                     <div class="item textWhite">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="side-right"> <img src="img/side2.png"></div>
+      </div>
+      <div class="liveDemo">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="livedemo_heading">
+                       <h3>Live SIMLEA erleben
+                    </h3>
+                    <p>Buchen Sie unverbindlich eine Online-Demo mit SIMLEA und erleben wie kinderleicht die Bedienung und Verwaltung ist.</p>
+                    <div class="live_btn">
+                    <a href="#">Weitere Beiträge anzeign</a>
+                </div>
+                 </div>
+                
+                 <div class="row">
+                    <div class="livedemo_image">
+                        <img src="img/live-demo.png">
+                    </div>
+                 </div>
+
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="contact">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="contact-left-sidebar">
+                            <div class="contact_heading">
+                               <h3>Kontaktieren Sie uns</h3>
+                                <p>Ihre Angaben werden zur Bearbeitung der Kontaktanfrage und deren Abwicklung
+                                    gem. Art. 6 Abs. 1 lit. b) DSGVO verarbeitet.</p>
+                             </div>
+                             <div class="contact_details">
+                                <h3>SIMLEA </h3>
+                                 <p>Digitalisieren Sie Leads mit SIMLEA.</p>
+                              </div>
+                              <div class="contact_details_content">
+                               <div class="contact-box">
+                                <img src="img/Pin.png">
+                                <p>Boveristr. 15
+                                    68526 Ladenburg</p>
+                               </div>
+                               <div class="contact-box">
+                                <img src="img/Phone.png">
+                                <p>Tel.: +49 (0)6203 / 679987 - 0<br/>
+                                    Fax: +49 (0)6203 / 679987 - 9</p>
+                               </div>
+                               <div class="contact-box">
+                                <img src="img/mail.png">
+                                <p>info@simlea.com</p>
+                               </div>
+                              </div>
+                        </div>
+                     
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                       <div class="form contact-form">
+                           <div class="diagonal-contact">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Name*</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Firma</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Telefon</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">E-Mail-Adresse*</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group custom_label">
+                                        <label for="comment">Ihre Nachricht</label>
+                                        <textarea class="" id="comment" rows="3"></textarea>
+                                        <p>*Pflichtfelder</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group form-check custom-checkbox">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox" name="remember" required> 
+                                          Gerne möchte ich mehr über die Produkte und Dienstleistungen der simlea GmbH erfahren. Ich stimme hierfür der elektronischen Kontaktaufnahme durch die „alivello"
+                                          Solutions GmbH zu. Mit meiner Registrierung stimme ich der „alivello" Solutions GmbH Datenschutzerklärung zu.
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-md-12">
+                                        <div class="contact-submit">
+                                            <a class="" href="#">Unverbindlich Kontakt aufnehmen</a>
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       </div>
+                    </div>
+                 </div>
+                
+              </div>
+           </div>
+        </div>
+     </div>
+      <footer>
+            <div class="container">
+                <div class="footer-top">
+               <div class="row align-items-center">
+                  <div class="col-md-6 col-6">
+                     <a href="#"  class="fullwidth"><img alt="" title="" src="img/Logo-Footer.svg" /></a>
+                  </div>
+                  <div class="col-md-6 col-6 download_app">
+                    <a href="#" class="float-right fullwidth"><img alt="" title="" src="img/footer-app.png" /></a>
+                    <p>Sie benötigen  Anmeldecode und Lizenz</p>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+                   <div class="row">
+                      <div class="col-md-3">
+                          <div class="bottom-text">
+                         <p>SIMLEA GmbH</p>
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                         <ul class="bottom-menu">
+                            <li>
+                               <a href="#">Impressum</a>   
+                            </li>                         
+                            <li>
+                                <a href="#">Datenschutz</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Kontakt</a>                                
+                            </li>
+                            <li>
+                                <div class="dropdown footer-menu-dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="img/flag.png">  DE <img src="img/right-drop.png">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      
+                                    </div>
+                                  </div>                          
+                            </li>
+                         </ul>
+                      </div>
+                   </div>
+             </div>
+        </div>
+         
+      </footer>
+
+      <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script> 
+      <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+      <script type="text/javascript" src="js/font-awesome.js"></script>
+      <script type="text/javascript" src="js/global.js"></script>
+      
+   </body>
+</html>

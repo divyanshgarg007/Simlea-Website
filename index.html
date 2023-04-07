@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' rel='stylesheet'>
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <!-- <link rel="stylesheet" href="css/theme.css" type="text/css" />
+         <link rel="stylesheet" href="css/media.css" type="text/css" /> -->
+      <title>SIMLEA</title>
+     <style>
+        .hamburger-menu {
+    box-sizing: border-box;   
+    height: 100%;
+    background: #1A1A1A;
+    background-image: url(img/sub-menu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    transition: .5s ease right;
+    z-index: 1;
+}
+.hamburger-nav {
+   
+   padding: 50px 100px;
+    list-style: none;
+}
+.hamburger-nav .upper-menu {
+   color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: none;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 80px;
+}
+.hamburger-nav .upper-menu:hover{
+   text-decoration: none;
+}
+
+.bottom-left {
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-bottom: solid 2px #a5a5a5;
+    border-left: solid 2px #a5a5a5;
+    transform: rotate(90deg);
+}
+
+.cross-a, .cross-b {
+    position:absolute;
+    width:0;
+    height:0;
+}
+
+.cross-a {
+   top: -2px;
+    left: -4px;
+    border-top: 24px solid #1a1a1a;
+    border-right: 24px solid #a5a5a5;
+}
+
+.cross-b {
+    top: -2px;
+    left: -3px;
+    border-top: 26px solid transparent;
+    border-right: 26px solid #1a1a1a;
+}
+.top-right {
+   position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    border-bottom: solid 2px #a5a5a5;
+    border-left: solid 2px #a5a5a5;
+    transform: rotate(90deg);
+}
+
+.cross-c, .cross-d {
+    position:absolute;
+    width:0;
+    height:0;
+}
+
+.cross-c {
+   top: -2px;
+    left: -4px;
+    border-top: 24px solid #1a1a1a;
+    border-right: 24px solid #a5a5a5;
+}
+
+.cross-d {
+    top: -2px;
+    left: -3px;
+    border-top: 26px solid transparent;
+    border-right: 26px solid #1a1a1a;
+}
+.process-box h5 {
+    color: #C5C5C5;
+}
+.process-box{
+   overflow: auto;
+    border-top: solid 2px #a5a5a5;
+    border-bottom: solid 2px #a5a5a5;
+    border-left: solid 2px #a5a5a5;
+    border-right: solid 2px #a5a5a5;
+    padding: 26px;
+}
+     </style>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="row align-items-center hide-xs">
+               <div class="top_right_section col-md-3">
+                  <div class="container-hamburger">
+                     <div class="hamburger-wrapper">
+                        <div class="hamburger">
+                           <span class="hamurger-first"></span>
+                           <span class="hamurger-second"></span>
+                           <span class="hamurger-third"></span>
+                        </div>
+                        <div class="hamburger-menu">
+                           <ul class="hamburger-nav">
+                              <!-- <div class="slideLogo"><img src="img/logo-header.svg" alt=""></div> -->
+                              <li class="dropdown_list"> <a href="#" target="_blank"
+                                 class="upper-menu" title="pim software" type="internal">Product Information Management (PIM)
+                              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                              </a>
+                              <ul class="sub_menu_items">
+                                 <li><a>fbsdfsdfbsf</a></li>
+                                 <li><a>fbsdfsdfbsf</a></li>
+                                 <li><a>fbsdfsdfbsf</a></li>
+                                 <li><a>fbsdfsdfbsf</a></li>
+                              </ul>
+                              </li>
+                              <li > <a class="upper-menu" href="/en/our-solutions/pimcore-product-information-management" target="_blank" title="pim software" type="internal">Product Information Management (PIM)</a></li>
+                              <li > <a class="upper-menu" href="/en/our-solutions/pimcore-product-information-management" target="_blank" title="pim software" type="internal">Product Information Management (PIM)</a></li>
+                              <li > <a class="upper-menu" href="/en/our-solutions/pimcore-product-information-management" target="_blank" title="pim software" type="internal">Product Information Management (PIM)</a></li>
+                        </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="site_logo col-md-9">
+                  <a href="/"><img src="img/logo-header.svg" alt=""></a>
+               </div>
+            </div>
+
+            <div class="row align-items-center visible-xs hide-md">
+               <div class="site_logo col-md-9">
+                  <a href="/"><img src="img/Logo-Footer.svg" alt=""></a>
+               </div>
+               <div class="top_right_section col-md-3">
+                  <div class="container-hamburger">
+                     <div class="hamburger-wrapper">
+                        <div class="hamburger">
+                           <span class="hamurger-first"></span>
+                           <span class="hamurger-second"></span>
+                           <span class="hamurger-third"></span>
+                        </div>
+                        <div class="hamburger-menu">
+                           <ul class="hamburger-nav">
+                              <div class="hamburger-menu">
+                                 <ul class="hamburger-nav">
+                                    <div class="slideLogo"><img src="img/logo-header.svg" alt=""></div>
+                                    <li class="dropdown_list"> <a href="#" target="_blank"
+                                       title="pim software" type="internal">Product Information Management (PIM)
+                                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="sub_menu_items">
+                                       <li><a>fbsdfsdfbsf</a></li>
+                                       <li><a>fbsdfsdfbsf</a></li>
+                                       <li><a>fbsdfsdfbsf</a></li>
+                                       <li><a>fbsdfsdfbsf</a></li>
+                                    </ul>
+                                    </li>
+                                    <li> <a href="/en/our-solutions/pimcore-product-information-management" target="_blank" title="pim software" type="internal">Product Information Management (PIM)</a></li>
+                                    <li> <a href="/en/our-solutions/pimcore-product-information-management" target="_blank" title="pim software" type="internal">Product Information Management (PIM)</a></li>
+                                    <li> <a href="/en/our-solutions/pimcore-product-information-management" target="_blank" title="pim software" type="internal">Product Information Management (PIM)</a></li>
+                              </div>
+                        </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+         <!-- \\  Begin mobilemenu \\  -->
+         <div class="mobilemenu">
+            <div id="mainmenu" class="default11"></div>
+         </div>
+         <!-- // End mobilemenu  //  -->
+         </div>
+      </header>
+      <div class="Banner_section">
+         <div class="banner_slider owl-carousel owl owl-theme">
+            <div class="item">
+               <div class="banner-bg-full"><div class="left-bg bg-left-black"></div><div class="right-bg bg-right-black"></div></div>
+               <div class="container">
+                  <div class="row">
+                      <div class="col-md-7 bg-left-white">
+                          <div class="content-box">
+                              <div class="text">
+                                  <h1>Pioniere der smarten Leaderfassung auf Messen.</h1>
+                                  <p>Holen Sie mit SIMLEA mehr aus Ihren Leadprozessen heraus. SIMLEA optimiert erfolgreich seit über zehn Jahren, die digitale Leaderfassung auf Messen. Kunden schätzen insbesondere die kinderleichte Bedienung von SIMLEA.</p>
+                                  
+                               </div>
+                               <div class="banner-button">
+                                 <a class="" href="#">SIMLEA gratis testen<img src="img/Arrow-Right.png"></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          <div class="banner-right-image">
+                              <img src="img/right-banner.png">
+                          </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="banner-bg-full"><div class="left-bg bg-left-black"></div><div class="right-bg bg-right-black"></div></div>
+               <div class="container">
+                  <div class="row">
+                      <div class="col-md-7 bg-left-white">
+                          <div class="content-box">
+                              <div class="text">
+                                  <h1>Pioniere der smarten Leaderfassung auf Messen.</h1>
+                                  <p>Holen Sie mit SIMLEA mehr aus Ihren Leadprozessen heraus. SIMLEA optimiert erfolgreich seit über zehn Jahren, die digitale Leaderfassung auf Messen. Kunden schätzen insbesondere die kinderleichte Bedienung von SIMLEA.</p>
+                                  
+                               </div>
+                               <div class="banner-button">
+                                 <a class="" href="#">SIMLEA gratis testen<img src="img/Arrow-Right.png"></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          <div class="banner-right-image">
+                              <img src="img/right-banner.png">
+                          </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item">
+               <div class="banner-bg-full"><div class="left-bg bg-left-black"></div><div class="right-bg bg-right-black"></div></div>
+               <div class="container">
+                  <div class="row">
+                      <div class="col-md-7 bg-left-white">
+                          <div class="content-box">
+                              <div class="text">
+                                  <h1>Pioniere der smarten Leaderfassung auf Messen.</h1>
+                                  <p>Holen Sie mit SIMLEA mehr aus Ihren Leadprozessen heraus. SIMLEA optimiert erfolgreich seit über zehn Jahren, die digitale Leaderfassung auf Messen. Kunden schätzen insbesondere die kinderleichte Bedienung von SIMLEA.</p>
+                                  
+                               </div>
+                               <div class="banner-button">
+                                 <a class="" href="#">SIMLEA gratis testen<img src="img/Arrow-Right.png"></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-5">
+                          <div class="banner-right-image">
+                              <img src="img/right-banner.png">
+                          </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+           
+        </div>
+         
+
+      </div>
+      <div class="process common-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section_heading">
+                     <h3>Gewinnen Sie mehr Zeit für Ihre Kunden im Messedschungel, indem Sie Prozesse optimieren in der Leadgenerierung.</h3>
+                  </div>
+                  <div class="process_slider owl-carousel owl owl-theme">
+                     <div class="item">
+                        <div class="">
+                           <div class="bottom-left"><div class="cross-a"></div><div class="cross-b"></div></div>
+                           <div class="top-right"><div class="cross-c"></div><div class="cross-d"></div></div>
+                           <div class="process-box">
+                              <img src="img/process2.png">
+                              <h5>Effiziente Leaderfassung durch Scannen der Visitenkarte und automatische Übertragung der Information an SIMLEA.</h5>
+                           </div>
+                         
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="button-blue">
+                  <a class="" href="#">SIMLEA Online-Demo vereinbaren<img src="img/Arrow-Right.png"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="testimonials common-space">
+          <div class="side-left"> <img src="img/side1.png"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="testimonial_slider owl-carousel owl owl-theme">
+                     <div class="item">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                     <div class="item">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                     <div class="item">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                     <div class="item">
+                        <p class="para">“Write is super-useful as we can see the actual text in the actual design. We can even adjust text length to make it look good!”
+                        </p>
+                        <h4>Micael Viegas</h4>
+                        <h6>Founder at Company Here</h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="side-right"> <img src="img/side2.png"></div>
+      </div>
+      <div class="faqs common-space">   
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="faq_heading">
+                     <h3>Was Sie beachten sollten bei der Beschaffung und Einführung einer digitalen Leaderfassung.</h3>
+                  </div>
+                  <div class="accordion" id="accordionExample">
+                     <div class="card accordion_card">
+                        <div class="card-header" id="headingOne">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <h6>Was ist ein Sanierungskonzept?</h6>
+                                 <span class="collapse-sign"><img src="img/plus.png"></span> 
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                           <div class="card-body">
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                   ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                   only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                </div>
+                        </div>
+                     </div>
+                     <div class="card accordion_card">
+                        <div class="card-header" id="headingTwo">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 <h6>Wann ist ein Sanierungsgutachen erforderlich?</h6>
+                                 <span class="collapse-sign"><img src="img/plus.png"></span>
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                 </div>
+                        </div>
+                     </div>
+                     <div class="card accordion_card">
+                        <div class="card-header" id="headingThree">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                 aria-expanded="false" aria-controls="collapseThree">
+                                 <h6>Was Sie über den IDW S6-Standard wissen m¨üssen</h6>
+                                 <span class="collapse-sign"><img src="img/plus.png"></span>
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                 </div>
+                        </div>
+                     </div>
+                     <div class="card accordion_card">
+                        <div class="card-header" id="headingFour">
+                           <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                 aria-controls="collapseFour">
+                                 <h6>Was kostet ein Sanierungskonzept nach IDW S6?</h6>
+                                 <span class="collapse-sign"><img src="img/plus.png"></span>
+                              </button>
+                           </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                 </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="blogs common-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="blog_heading">
+                     <div class="blogs_box">
+                        <h3>Blog</h3>
+                        <div class="blogs_all">
+                           <a href="#">Weitere Beiträge anzeign<img src="img/Arrow-blue.png"></a>
+                        </div>
+                     </div>
+                     <p>Erfahren Sie News und Hintergründe der digitalen Leaderfassung.</p>
+                  </div>
+                  <div class="blog_categories">
+                     <div class="categories_btn_group">
+                        <a href="">News</a>
+                        <a href="">Studies</a>
+                        <a href="">Customer success</a>
+                        <a href="">Stories</a>
+                     </div>
+                  </div>
+                  <div class="row  row-space">
+                     <div class="col-md-5 mobile-row-space">
+                        <div class="blog-card-upper blog-img1">
+                           <div class="blog-card-overlay">
+                           </div>
+                           <div class="blog-content">
+                              <h4>Umzug und neue Kontaktdaten</h4>
+                              <p>Wir sind in ein neues Büro umgezogen!</p>
+                              <a href="">Weiterlesen</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-7 mobile-row-space">
+                        <div class="blog-card-upper blog-img2">
+                           <div class="blog-card-overlay">
+                           </div>
+                           <div class="blog-content">
+                              <h4>Eine Stunde für ein erfolgreiches Messejahr 2021!</h4>
+                              <p>Am 15. Dezember von 10.00 bis 11.00 Uhr ist es soweit - im Webinar zur SIMLEA Webinar zeigen wir, wie die digitale Leaderfassung auf Messen einfach gelingt!</p>
+                              <a href="">Weiterlesen</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-7 mobile-row-space">
+                        <div class="blog-card-lower blog-img1">
+                           <div class="blog-card-overlay">
+                           </div>
+                           <div class="blog-content">
+                              <h4>Messen in Corona-Zeiten - ein Liveticker (Stand: 15.10.2020)</h4>
+                              <p>Am 15. Dezember von 10.00 bis 11.00 Uhr ist es soweit - im Webinar zur SIMLEA Webinar zeigen wir, wie die digitale Leaderfassung auf Messen einfach gelingt!</p>
+                              <a href="">Weiterlesen</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-5 mobile-row-space">
+                        <div class="blog-card-lower blog-img2">
+                           <div class="blog-card-overlay">
+                           </div>
+                           <div class="blog-content">
+                              <h4>Teamworking am Messestand</h4>
+                              <p>Ein neues Modul macht es möglich – die „alivello“ Solutions GmbH erweitert die SIMLEA Lead App um die Komponente des Teamw ...</p>
+                              <a href="">Weiterlesen</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="liveDemo">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="livedemo_heading">
+                       <h3>Live SIMLEA erleben
+                    </h3>
+                    <p>Buchen Sie unverbindlich eine Online-Demo mit SIMLEA und erleben wie kinderleicht die Bedienung und Verwaltung ist.</p>
+                    <div class="live_btn">
+                    <a href="#">Weitere Beiträge anzeign</a>
+                </div>
+                 </div>
+                
+                 <div class="row">
+                    <div class="livedemo_image">
+                        <img src="img/live-demo.png">
+                    </div>
+                 </div>
+
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="contact">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="contact-left-sidebar">
+                            <div class="contact_heading">
+                               <h3>Kontaktieren Sie uns</h3>
+                                <p>Ihre Angaben werden zur Bearbeitung der Kontaktanfrage und deren Abwicklung
+                                    gem. Art. 6 Abs. 1 lit. b) DSGVO verarbeitet.</p>
+                             </div>
+                             <div class="contact_details">
+                                <h3>SIMLEA </h3>
+                                 <p>Digitalisieren Sie Leads mit SIMLEA.</p>
+                              </div>
+                              <div class="contact_details_content">
+                               <div class="contact-box">
+                                <img src="img/Pin.png">
+                                <p>Boveristr. 15
+                                    68526 Ladenburg</p>
+                               </div>
+                               <div class="contact-box">
+                                <img src="img/Phone.png">
+                                <p>Tel.: +49 (0)6203 / 679987 - 0<br/>
+                                    Fax: +49 (0)6203 / 679987 - 9</p>
+                               </div>
+                               <div class="contact-box">
+                                <img src="img/mail.png">
+                                <p>info@simlea.com</p>
+                               </div>
+                              </div>
+                        </div>
+                     
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                       <div class="form contact-form">
+                           <div class="diagonal-contact">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Name*</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Firma</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Telefon</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">E-Mail-Adresse*</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group custom_label">
+                                        <label for="comment">Ihre Nachricht</label>
+                                        <textarea class="" id="comment" rows="3"></textarea>
+                                        <p>*Pflichtfelder</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group form-check custom-checkbox">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox" name="remember" required> 
+                                          Gerne möchte ich mehr über die Produkte und Dienstleistungen der simlea GmbH erfahren. Ich stimme hierfür der elektronischen Kontaktaufnahme durch die „alivello"
+                                          Solutions GmbH zu. Mit meiner Registrierung stimme ich der „alivello" Solutions GmbH Datenschutzerklärung zu.
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-md-12">
+                                        <div class="contact-submit">
+                                            <a class="" href="#">Unverbindlich Kontakt aufnehmen</a>
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       </div>
+                    </div>
+                 </div>
+                
+              </div>
+           </div>
+        </div>
+     </div>
+      <footer>
+            <div class="container">
+                <div class="footer-top">
+               <div class="row align-items-center">
+                  <div class="col-md-6 col-6">
+                     <a href="#"  class="fullwidth"><img alt="" title="" src="img/Logo-Footer.svg" /></a>
+                  </div>
+                  <div class="col-md-6 col-6 download_app">
+                    <a href="#" class="float-right fullwidth"><img alt="" title="" src="img/footer-app.png" /></a>
+                    <p>Sie benötigen  Anmeldecode und Lizenz</p>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+                   <div class="row">
+                      <div class="col-md-3">
+                          <div class="bottom-text">
+                         <p>SIMLEA GmbH</p>
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                         <ul class="bottom-menu">
+                            <li>
+                               <a href="#">Impressum</a>   
+                            </li>                         
+                            <li>
+                                <a href="#">Datenschutz</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Kontakt</a>                                
+                            </li>
+                            <li>
+                                <div class="dropdown footer-menu-dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="img/flag.png">  DE <img src="img/right-drop.png">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      
+                                    </div>
+                                  </div>                          
+                            </li>
+                         </ul>
+                      </div>
+                   </div>
+             </div>
+        </div>
+         
+      </footer>
+
+      <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> -->
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script> 
+      <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+      <script type="text/javascript" src="js/font-awesome.js"></script>
+      <script type="text/javascript" src="js/global.js"></script>
+   </body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' rel='stylesheet'>
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <!-- <link rel="stylesheet" href="css/theme.css" type="text/css" />
+         <link rel="stylesheet" href="css/media.css" type="text/css" /> -->
+      <title>SIMLEA</title>
+     <style>
+        /* .moreless-button{
+         font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0e0e0e;
+        }
+        .moreless-button:hover{
+           text-decoration: none;
+           color: #0e0e0e;
+        }
+        .info_box .moretext{
+         display: none;
+         font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+color: #6C6C6C;
+        } */
+        .function_dark{
+           background: #020202;
+           padding: 90px 0px;
+        }
+        .function_card{
+         background: #0E0E0E;
+         border: 2px solid #212121;
+         padding: 2rem 3rem;
+        }
+        .function_box h3{
+         font-family: 'Red Hat Display';
+         font-weight: 800;
+         font-size: 24px;
+         line-height: 31px;
+         color: #fff;
+        }
+        .function_box h4{
+         font-family: 'Red Hat Display';
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 31px;
+         color: #fff;
+        }
+        .function_box p{
+         font-family: 'Red Hat Display';
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 19px;
+         color: #fff;
+         margin-bottom: 0;
+         margin-top: 1rem;
+        }
+        .function_row{
+           row-gap: 2rem;
+        }
+        .moving_card{
+           overflow: hidden;
+           position: relative;
+        }
+        .moving_card::before{
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(#30C6EA , #216374);
+         animation: animate 4s infinite linear;
+        }
+        .moving_card::after{
+         content: "";
+         position: absolute;
+         background: #0E0E0E;
+         inset: 4px;
+        }
+        .moving_card .function_box{
+           position: relative;
+           z-index: 11;
+        }
+        @keyframes animate{
+         100% {
+              transform: rotate(0deg);
+           }
+           100% {
+              transform: rotate(360deg);
+           }
+        }
+     </style>
+   </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <div class="row align-items-center hide-xs">
+               <div class="top_right_section col-md-3">
+                  <div class="container-hamburger">
+                     <div class="hamburger-wrapper">
+                        <div class="hamburger product-hamburger">
+                           <span class="hamurger-first"></span>
+                           <span class="hamurger-second"></span>
+                           <span class="hamurger-third"></span>
+                        </div>
+                        <div class="hamburger-menu">
+                           <ul class="hamburger-nav">
+                              <div class="slideLogo"><img src="https://mindstask.com/side-menu-logo/logo_white.png" alt="" width="175" /></div>
+                              <div class="onlySmalldesvice">
+                                 <div class="">
+                                    <div class="tabs">
+                                    </div>
+                                 </div>
+                              </div>
+                        </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="site_logo col-md-9">
+                  <a href="/"><img src="img/logo-header.svg" alt=""></a>
+               </div>
+            </div>
+
+            <div class="row align-items-center visible-xs hide-md">
+               <div class="site_logo col-md-9">
+                  <a href="/"><img src="img/logo-header.svg" alt=""></a>
+               </div>
+               <div class="top_right_section col-md-3">
+                  <div class="container-hamburger">
+                     <div class="hamburger-wrapper">
+                        <div class="hamburger product-hamburger">
+                           <span class="hamurger-first"></span>
+                           <span class="hamurger-second"></span>
+                           <span class="hamurger-third"></span>
+                        </div>
+                        <div class="hamburger-menu">
+                           <ul class="hamburger-nav">
+                              <div class="slideLogo"><img src="https://mindstask.com/side-menu-logo/logo_white.png" alt="" width="175" /></div>
+                              <div class="onlySmalldesvice">
+                                 <div class="">
+                                    <div class="tabs">
+                                    </div>
+                                 </div>
+                              </div>
+                        </div>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+         <!-- \\  Begin mobilemenu \\  -->
+         <div class="mobilemenu">
+            <div id="mainmenu" class="default11"></div>
+         </div>
+         <!-- // End mobilemenu  //  -->
+         </div>
+      </header>
+      <div class="function_banner">
+         <div class="container">
+            <div class="row function-banner-row">
+               <div class="fullBanner">
+                  <div class="product-banner-heading">
+                     <div class="banner-box">
+                        <h3>Funktionen der SIMLEA Lead Applikation im Überblick</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="function_dark">
+         <div class="container">
+            <div class="row function_row">
+               <div class="col-md-12">
+                 <div class="function_card moving_card">
+                     <div class="function_box">
+                        <h3>SIMLEA FUNKTIONEN</h3>
+                         <h4> Was ist SIMLEA und wie funktioniert es?</h4> 
+                         <p>Bei der SIMLEA-App handelt es sich um eine App zur digitalen Kontakt- und Vertriebsdatenerfassung (digitale Leaderfassung), die speziell für die Verwendung auf Messen und Eventveranstaltungen entwickelt wurde. Mit einer Lizenzvereinbarung kann die  SIMLEA-App im Apple App Store oder Google Playstore heruntergeladen werden und ihrem Smartphone bzw. iPhone oder Tablet installieren werden.</p>
+
+                          <p> Durch die Verwendung der SIMLEA-App optimieren Sie den Erfassungsprozess von wichtigen Kundenkontakten erheblich und optimieren zusätzlich noch Ihr Zeitmanagement. Die App ist dabei sehr flexibel konfigurierbar und lässt sich spielend leicht auf Ihre Organisation und Vertriebsziele anpassen.</p>
+                     </div>
+                 </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="function_card">
+                      <div class="function_box">
+                         <h3>SIMLEA FUNKTIONEN</h3>
+                          <h4> Was ist SIMLEA und wie funktioniert es?</h4> 
+                          <p>Bei der SIMLEA-App handelt es sich um eine App zur digitalen Kontakt- und Vertriebsdatenerfassung (digitale Leaderfassung), die speziell für die Verwendung auf Messen und Eventveranstaltungen entwickelt wurde. Mit einer Lizenzvereinbarung kann die  SIMLEA-App im Apple App Store oder Google Playstore heruntergeladen werden und ihrem Smartphone bzw. iPhone oder Tablet installieren werden.</p>
+ 
+                           <p> Durch die Verwendung der SIMLEA-App optimieren Sie den Erfassungsprozess von wichtigen Kundenkontakten erheblich und optimieren zusätzlich noch Ihr Zeitmanagement. Die App ist dabei sehr flexibel konfigurierbar und lässt sich spielend leicht auf Ihre Organisation und Vertriebsziele anpassen.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="function_card">
+                      <div class="function_box">
+                         <h3>SIMLEA FUNKTIONEN</h3>
+                          <h4> Was ist SIMLEA und wie funktioniert es?</h4> 
+                          <p>Bei der SIMLEA-App handelt es sich um eine App zur digitalen Kontakt- und Vertriebsdatenerfassung (digitale Leaderfassung), die speziell für die Verwendung auf Messen und Eventveranstaltungen entwickelt wurde. Mit einer Lizenzvereinbarung kann die  SIMLEA-App im Apple App Store oder Google Playstore heruntergeladen werden und ihrem Smartphone bzw. iPhone oder Tablet installieren werden.</p>
+ 
+                           <p> Durch die Verwendung der SIMLEA-App optimieren Sie den Erfassungsprozess von wichtigen Kundenkontakten erheblich und optimieren zusätzlich noch Ihr Zeitmanagement. Die App ist dabei sehr flexibel konfigurierbar und lässt sich spielend leicht auf Ihre Organisation und Vertriebsziele anpassen.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="function_card">
+                      <div class="function_box">
+                         <h3>SIMLEA FUNKTIONEN</h3>
+                          <h4> Was ist SIMLEA und wie funktioniert es?</h4> 
+                          <p>Bei der SIMLEA-App handelt es sich um eine App zur digitalen Kontakt- und Vertriebsdatenerfassung (digitale Leaderfassung), die speziell für die Verwendung auf Messen und Eventveranstaltungen entwickelt wurde. Mit einer Lizenzvereinbarung kann die  SIMLEA-App im Apple App Store oder Google Playstore heruntergeladen werden und ihrem Smartphone bzw. iPhone oder Tablet installieren werden.</p>
+ 
+                           <p> Durch die Verwendung der SIMLEA-App optimieren Sie den Erfassungsprozess von wichtigen Kundenkontakten erheblich und optimieren zusätzlich noch Ihr Zeitmanagement. Die App ist dabei sehr flexibel konfigurierbar und lässt sich spielend leicht auf Ihre Organisation und Vertriebsziele anpassen.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="function_card">
+                      <div class="function_box">
+                         <h3>SIMLEA FUNKTIONEN</h3>
+                          <h4> Was ist SIMLEA und wie funktioniert es?</h4> 
+                          <p>Bei der SIMLEA-App handelt es sich um eine App zur digitalen Kontakt- und Vertriebsdatenerfassung (digitale Leaderfassung), die speziell für die Verwendung auf Messen und Eventveranstaltungen entwickelt wurde. Mit einer Lizenzvereinbarung kann die  SIMLEA-App im Apple App Store oder Google Playstore heruntergeladen werden und ihrem Smartphone bzw. iPhone oder Tablet installieren werden.</p>
+ 
+                           <p> Durch die Verwendung der SIMLEA-App optimieren Sie den Erfassungsprozess von wichtigen Kundenkontakten erheblich und optimieren zusätzlich noch Ihr Zeitmanagement. Die App ist dabei sehr flexibel konfigurierbar und lässt sich spielend leicht auf Ihre Organisation und Vertriebsziele anpassen.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="function_card">
+                      <div class="function_box">
+                         
+                          <p>Bei der SIMLEA-App handelt es sich um eine App zur digitalen Kontakt- und Vertriebsdatenerfassung (digitale Leaderfassung), die speziell für die Verwendung auf Messen und Eventveranstaltungen entwickelt wurde. Mit einer Lizenzvereinbarung kann die  SIMLEA-App im Apple App Store oder Google Playstore heruntergeladen werden und ihrem Smartphone bzw. iPhone oder Tablet installieren werden.</p>
+ 
+                           <p> Durch die Verwendung der SIMLEA-App optimieren Sie den Erfassungsprozess von wichtigen Kundenkontakten erheblich und optimieren zusätzlich noch Ihr Zeitmanagement. Die App ist dabei sehr flexibel konfigurierbar und lässt sich spielend leicht auf Ihre Organisation und Vertriebsziele anpassen.</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+      </div>
+      <div class="function_info">
+         <div class="container">
+            <div class="row grid-space">
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f1.png">
+                        <h5>DSGVO konforme Messe Lead App</h5>
+                        <p class="moretext">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec elit tellus. Nulla facilisi. Quisque elementum ligula eros, id venenatis metus euismod a. Duis non magna laoreet, accumsan velit ut, auctor elit. Ut ullamcorper suscipit ex, eu ultrices dolor molestie sit amet. Maecenas quis ultrices velit, quis sagittis quam. Aenean consequat venenatis orci tempus viverra. Aenean molestie ornare arcu, ac congue magna luctus dapibus. Maecenas vestibulum rhoncus nisi ac iaculis. Suspendisse a risus id ipsum sagittis blandit
+                         </p>
+                        <a class="moreless-button" href="#">Read More</a>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f2.png">
+                        <h5>Android und IOS Kompatibilität</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f3.png">
+                        <h5>Offline Erfassung von Kontakten</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f4.png">
+                        <h5>Frei konfigurierbare Formulare</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f5.png">
+                        <h5>Dynamische Formulare</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f6.png">
+                        <h5>Mehrere Events/Formulare in einer Applikation</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f7.png">
+                        <h5>Mehrsprachige Formulare (Deutsch, Englisch, Italienisch, Französisch etc.)</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f8.png">
+                        <h5>Pflichtfelder nach Ihren Vorgaben, damit Ihre Berichte vollständig erfasst werden</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f9.png">
+                        <h5>OCR Erkennung in 27 Landessprachen</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f10.png">
+                        <h5>QR Code Erkennung</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f11.png">
+                        <h5>E-Mail Wizard für den automatisierten Versand von E-Mails mit Zeitsteuerung</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f12.png">
+                        <h5>Vorbereitete Schnittstellen (Adapter) zu den renommiertesten CRM Anbietern</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f13.png">
+                        <h5>Speech-2-Text Recognition im Online Modus</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f14.png">
+                        <h5>Skizzen an erfasste Leads anbinden</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f15.png">
+                        <h5>Export Wizard für individuelle Exporte</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f16.png">
+                        <h5>Export einzelner Leads als PDF Dokument (Leadbericht)</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f17.png">
+                        <h5>Import von Bestands-daten aus dem Kunden CRM inkl. Suche + Übernahme im Formular</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f18.png">
+                        <h5>Import bestehender Leads</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f19.png">
+                        <h5>Einbindung von PDFs (z.B. Produktdatenblättern), Videos oder Bildern</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f20.png">
+                        <h5>Unterschriftenfeld zur Permission Erfassung</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f21.png">
+                        <h5>Überarbeitung von bestehenden Datensätzen</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f22.png">
+                        <h5>Personalisierter Login</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f23.png">
+                        <h5>Statistik in Echtzeit</h5>
+                     </div>
+                  </div>             
+               </div>
+               <div class="col-md-3">
+                  <div class="info_card">
+                     <div class="info_box">
+                        <img src="img/f24.png">
+                        <h5>Synchronisation der erfassten Daten via verschlüsselter Verbindung (SSL)</h5>
+                     </div>
+                  </div>             
+               </div>
+            </div>
+         </div>
+      </div>
+     <div class="contact">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="contact-left-sidebar">
+                            <div class="contact_heading">
+                               <h3>Kontaktieren Sie uns</h3>
+                                <p>Ihre Angaben werden zur Bearbeitung der Kontaktanfrage und deren Abwicklung
+                                    gem. Art. 6 Abs. 1 lit. b) DSGVO verarbeitet.</p>
+                             </div>
+                             <div class="contact_details">
+                                <h3>SIMLEA </h3>
+                                 <p>Digitalisieren Sie Leads mit SIMLEA.</p>
+                              </div>
+                              <div class="contact_details_content">
+                               <div class="contact-box">
+                                <img src="img/Pin.png">
+                                <p>Boveristr. 15
+                                    68526 Ladenburg</p>
+                               </div>
+                               <div class="contact-box">
+                                <img src="img/Phone.png">
+                                <p>Tel.: +49 (0)6203 / 679987 - 0<br/>
+                                    Fax: +49 (0)6203 / 679987 - 9</p>
+                               </div>
+                               <div class="contact-box">
+                                <img src="img/mail.png">
+                                <p>info@simlea.com</p>
+                               </div>
+                              </div>
+                        </div>
+                     
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                       <div class="form contact-form">
+                           <div class="diagonal-contact">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Name*</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Firma</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">Telefon</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom_label">
+                                        <label for="email">E-Mail-Adresse*</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group custom_label">
+                                        <label for="comment">Ihre Nachricht</label>
+                                        <textarea class="" id="comment" rows="3"></textarea>
+                                        <p>*Pflichtfelder</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group form-check custom-checkbox">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox" name="remember" required> 
+                                          Gerne möchte ich mehr über die Produkte und Dienstleistungen der simlea GmbH erfahren. Ich stimme hierfür der elektronischen Kontaktaufnahme durch die „alivello"
+                                          Solutions GmbH zu. Mit meiner Registrierung stimme ich der „alivello" Solutions GmbH Datenschutzerklärung zu.
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-md-12">
+                                        <div class="contact-submit">
+                                            <a class="" href="#">Unverbindlich Kontakt aufnehmen</a>
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       </div>
+                    </div>
+                 </div>
+                
+              </div>
+           </div>
+        </div>
+     </div>
+      <footer>
+            <div class="container">
+                <div class="footer-top">
+               <div class="row align-items-center">
+                  <div class="col-md-6 col-6">
+                     <a href="#"  class="fullwidth"><img alt="" title="" src="img/Logo-Footer.svg" /></a>
+                  </div>
+                  <div class="col-md-6 col-6 download_app">
+                    <a href="#" class="float-right fullwidth"><img alt="" title="" src="img/footer-app.png" /></a>
+                    <p>Sie benötigen  Anmeldecode und Lizenz</p>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+                   <div class="row">
+                      <div class="col-md-3">
+                          <div class="bottom-text">
+                         <p>SIMLEA GmbH</p>
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                         <ul class="bottom-menu">
+                            <li>
+                               <a href="#">Impressum</a>   
+                            </li>                         
+                            <li>
+                                <a href="#">Datenschutz</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Kontakt</a>                                
+                            </li>
+                            <li>
+                                <div class="dropdown footer-menu-dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="img/flag.png">  DE <img src="img/right-drop.png">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      <a class="dropdown-item" href="#"> <img src="img/flag.png">  DE <img src="img/right-drop.png"></a>
+                                      
+                                    </div>
+                                  </div>                          
+                            </li>
+                         </ul>
+                      </div>
+                   </div>
+             </div>
+        </div>
+         
+      </footer>
+
+      <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script> 
+      <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+      <script type="text/javascript" src="js/font-awesome.js"></script>
+      <script type="text/javascript" src="js/global.js"></script>
+      <script>
+         $('.moreless-button').click(function(e) {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Read More") {
+    $(this).text("Read Less")
+  } else {
+    $(this).text("Read More")
+  }
+  e.stopPropagation();
+    e.preventDefault();
+});
+      </script>
+   </body>
+</html>
